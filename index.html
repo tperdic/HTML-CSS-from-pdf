@@ -1,0 +1,1775 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 12px;
+            line-height: 24px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin: 0;
+            line-height: 14px;
+        }
+
+        li {
+            line-height: 14px;
+        }
+
+        h1 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        label span,
+        h1 span,
+        h2 span,
+        h3 span {
+            color: #149DDE;
+            font-size: 10px;
+        }
+
+        h1 span {
+            line-height: 26px;
+        }
+
+        h2 span {
+            line-height: 22px;
+        }
+
+        h3 span,
+        h3 em {
+            line-height: 12px;
+        }
+
+        label {
+            line-height: 12px;
+            display: block;
+        }
+
+        h3 em,
+        label em {
+            font-size: 10px;
+            display: block;
+            font-style: normal;
+        }
+
+        table {
+            border-spacing: 0px;
+            width: 100%;
+        }
+
+        table td {
+            line-height: 14px;
+            padding: 3px 0 3px;
+        }
+
+        .inp {
+            border: 1px solid #149DDE;
+            padding: 5px 10px;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            background: #eaf6fe;
+            padding: 15px;
+            margin: 0 0 15px 0;
+        }
+
+        .top td {
+            vertical-align: top;
+        }
+
+        table.big {
+            padding: 0;
+            border-collapse: collapse;
+        }
+
+        table.big tr:first-child td h3 span {
+            display: block;
+        }
+
+        table.big td {
+            padding: 5px;
+            border: 1px solid #149DDE;
+        }
+
+        table.big tr:first-child td {
+            padding-top: 15px;
+            border: none;
+        }
+
+        table.big tr:last-child td {
+            padding-bottom: 15px;
+            border-bottom: none;
+        }
+
+        table.big td:first-child {
+            padding-left: 15px;
+            border-left: none;
+        }
+
+        table.big td:last-child {
+            padding-right: 15px;
+            border-right: none;
+        }
+
+        table .blue td {
+            background: #149DDE;
+        }
+
+        table .blue td label,
+        table .blue td span {
+            color: white;
+        }
+
+        .page_break {
+            page-break-after: always;
+        }
+
+        .header_space {
+            height: 30px;
+        }
+
+        .footer {
+            text-align: right;
+        }
+
+        .footer img {
+            width: 130px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style='width: 100%'>
+
+
+        <div style='padding: 20px 30px; background: #149DDE; color: white;'>
+            <h1 style="margin: 0 0 10px; ">Заява про членство <span style="color: white">Mitgliedserklärung</span>
+            </h1>
+            <h2 style="margin-bottom:0; ">Добровільне медичне страхування та страхування на випадок
+                потреби в догляді
+            </h2>
+            <p>Freiwillige Kranken- und Pflegeversicherung</p>
+        </div>
+
+        <div style='padding: 20px 30px 30px 30px; color: black;'>
+            <div style='width: 100%; '>
+                <h2 style="margin:0; ">Особисті дані <span style="">Persönliche
+                        Angaben</span> </h2>
+                <p>Formular VTregional</p>
+            </div>
+
+
+            <br>
+
+            <!-- PAGE 1, columns 
+            ----------------------------------------------------------------------------------------------------------->
+            <div style='width: 100%; display: flex; justify-content: space-between;'>
+
+                <!-- col1 -->
+                <div style="width: 49%;">
+
+                    <div class="wrap">
+                        <label style="display: block; padding-bottom: 5px; ">Я переходжу до IKK classic з (або
+                            вказати найближчу можливу дату) <br><span>Ich wähle die
+                                IKK
+                                classic ab (bzw. zum nächstmöglichen Zeitpunkt)</span></label>
+                        <div class="inp">{{variable}}</div>
+                    </div>
+
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Мої особисті дані <span style="">Meine persönlichen Daten</span> </h3>
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <label>Gender__ <span>Gender__</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Прізвище <span>Name</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Вулиця, номер будинку <br><span>Straße, Hausnummer</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}} {{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Поштовий індекс, місто <br><span>PLZ, Ort</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}} {{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Телефон (протягом дня)* <br><span>Telefon (tagsüber)*</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Електронна пошта* <br><span>E-Mail*</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Дата народження <br><span>Geburtsdatum</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Номер пенсійного страхування
+                                        <br><span>Rentenversicherungsnummer</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Прізвище при народженні <br><span>Geburtsname</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Місто народження <br><span>Geburtsort</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Країна народження <br><span>Geburtsland</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Громадянство <br><span>Staatsangehörigkeit</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <h3 style="margin:0; ">Сімейний стан <span style="">Familienstand</span> </h3>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td colspan="2">
+                                    {{checkbox}}
+                                    <label>неодружений/незаміжня <span>ledig</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {{checkbox}}
+                                    <label>одружений/заміжня, з <span>verheiratet, seit</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {{checkbox}}
+                                    <label>розлучений/розлучена, з <span>geschieden, seit</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {{checkbox}}
+                                    <label>вдівець/вдова з <span>verwitwet, seit</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                    <div class="wrap">
+
+                        <h3 style="margin:0; ">Exemption from long-term care insurance<br>
+                            <span style="">Befreiung von der Pflegeversicherung
+                            </span>
+                        </h3>
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+
+                    <div class="wrap">
+
+                        <h3 style="margin:0; ">I have/had children (natural children, adopted children,
+                            stepchildren, foster children) <br>
+                            <span style="">Ich habe/hatte Kinder (leibliche Kinder, Adoptivkinder, Stiefkinder,
+                                Pflegekinder)
+                            </span>
+                        </h3>
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                </div><!-- /col1 -->
+
+
+
+
+
+                <!-- col2 -->
+                <div style="width: 49%;">
+
+                    <div class="wrap">
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td colspan="2">
+                                    <label>Причина мого переходу: <span>Grund meines Wechsels:</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {{variable}}
+                                </td>
+                                <td>
+                                    <label>Припинення попереднього медичного
+                                        страхування<br><span>Kündigung der bisherigen Krankenkasse</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {{variable}}
+                                </td>
+                                <td>
+                                    <label>Зміни в моїх страхових відносинах<br><span>Änderungen in meinem
+                                            Versicherungsverhältnis</span></label>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+
+
+                    <div class="wrap">
+
+                        <h3 style="margin:0; ">Інформація про роботу/групу осіб<br>
+                            <span style="">Angaben zur ausgeübten Tätigkeit/zum Personenkreis
+                            </span>
+                        </h3>
+
+                        <table style="width: 100%;">
+
+                            <tr>
+                                <td colspan="2">
+                                    <label>Я з <span>Ich bin ab/seit</span></label>
+                                </td>
+                                <td style="width: 50%;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    {{checkbox}}
+                                </td>
+                                <td>
+                                    <label>працівник <span>Arbeitnehmer</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                </td>
+                                <td>
+                                    <div class="inp" style="margin-bottom: 5px; ">{{variable}}</div>
+                                    <label> (Ім’я та адреса роботодавця) <br><span>(Name und Anschrift des
+                                            Arbeitgebers)</span></label>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+                        <table>
+
+                            <tr>
+                                <td>{{checkbox}}</td>
+                                <td colspan="2"><label>самозайнятий/фрилансер <span>
+                                            selbstständig/freiberuflich</span></label></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><label>Кількість працівників<br> <span>
+                                            Anzahl Arbeitnehmer</span></label></td>
+                                <td width="25%">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td></td>
+                                <td><label>з них працівники, які працюють неповний
+                                        робочий день та щомісячна зарплата не
+                                        перевищує 450 євро в місяць<br> <span>
+                                            davon geringfügig Beschäftigte</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td></td>
+                                <td><label>щотижня Робочий час<br> <span>
+                                            wöchentl. Arbeitszeit</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>{{checkbox}}</td>
+                                <td colspan="2"><label>колишній військовослужбовець за контрактом<br> <span>
+                                            ehemaliger Zeitsoldat</span></label></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><label>Закінчення служби <span>
+                                            Dienstende am</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2" width="40%"><label>не працюю <br><span>
+                                            nicht erwerbstätig</span></label></td>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2" width="40%"><label>учасник товариства – керівник
+                                        <em>(будь ласка, закресліть те, що не
+                                            застосовується)</em> <span>
+                                            Gesellschafter – Geschäftsführer
+                                            (Nichtzutreffendes bitte ggf. streichen)</span></label></td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2" width="40%">
+                                    <label>пенсіонер/ка <br><span>
+                                            Rentner</span></label>
+                                </td>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2" width="40%"><label>державний службовець/пенсіонер (ексчиновник) <em>(маю
+                                            право на отримання допомоги)</em>
+                                        <span>
+                                            Beamter/Pensionär (beihilfeberechtigt)</span></label></td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2" width="40%"><label>учень/студент <br><span>
+                                            Schüler/Student</span></label></td>
+                                <td width="10%">{{checkbox}}</td>
+                                <td width="20%"><label>Інше <br><span>
+                                            Sonstiges</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="5" width="40%"><label>одержувач базового забезпечення/соціальної допомоги
+                                        на
+                                        проживання <br><span>
+                                            Empfänger von Grundsicherungsleistungen/Leistungen zum
+                                            Lebensunterhalt</span></label></td>
+                            </tr>
+
+
+
+
+                        </table>
+
+
+                    </div>
+
+                </div> <!-- /col2 -->
+
+            </div>
+
+            <div class="footer"><img src="logo.png" width="554" height="184"></div>
+
+            <div class="page_break"></div>
+
+
+            <!-- PAGE 2, columns 
+            ----------------------------------------------------------------------------------------------------------->
+            <div class="header_space"></div>
+            <div style='width: 100%; display: flex; justify-content: space-between;'>
+
+                <!-- col1 -->
+                <div style="width: 49%;">
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Право на отримання допомоги у зв’язку з хворобою
+                            (тільки для самозайнятих осіб, що працюють повний
+                            робочий день) <span style="">Krankengeldanspruch (nur für hauptberuflich selbstständig
+                                Tätige)</span> </h3>
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2"><label>без права на отримання допомоги у зв’язку з хворобою
+                                        <em>(У разі зміни медичної страхової компанії: немає періоду зобов’язань для
+                                            отримання передбаченої законом допомоги у зв’язку з хворобою)</em> <span>
+                                            ohne Anspruch auf Krankengeld (Bei Kassenwechsel: Es besteht keine
+                                            Bindungsfrist für einen gesetzlichen Krankengeldanspruch)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>{{checkbox}}</td>
+                                <td><label>з правом на отримання допомоги у зв’язку з хворобою з
+                                        <em>(Будь ласка, вкажіть дату початку страхування з правом
+                                            на отримання допомоги у зв’язку з хворобою) </em> <span>
+                                            mit Anspruch auf Krankengeld ab (Bitte Datum eintragen, zu wann die
+                                            Versicherung
+                                            mit Anspruch auf Krankengeld beginnen soll)</span></label>
+                                </td>
+                                <td width="20%">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td colspan="2"><label>У разі нової заяви: <span>
+                                            Bei Neuantrag:</span></label><br><label>Ви непрацездатні? <span>
+                                            Besteht Arbeitsunfähigkeit?</span></label><br>
+                                    {{checkbox}} <label>Так <span>
+                                            Ja</span></label>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td></td>
+                                <td colspan="2"><label>У разі зміни медичної страхової компанії:<br>
+                                        Ви вже маєте страхування з правом на отримання допомоги
+                                        у зв’язку з хворобою? <br><span>
+                                            Bei Kassenwechsel: Besteht bereits eine Versicherung mit
+                                            Krankengeldanspruch?</span></label><br>
+                                    {{checkbox}} <label>Так (якщо є, позначте хрестиком) <span>
+                                            Ja (Ggf. bitte ankreuzen)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><label>Якщо так: Період зобов’язань закінчується<br><span>
+                                            Wenn ja: Die Bindungsfrist endet am</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+                        <table>
+
+                            <tr>
+                                <td colspan="4"><label>Чи був період без внесків протягом періоду оцінки поданого на цей
+                                        момент повідомлення про нарахування податку на прибуток у зв’язку з
+                                        виплатою допомоги, яка компенсує втрату зарплати, наприклад, отримання допомоги
+                                        у зв’язку з хворобою?<br> <span>
+                                            Bestand im Veranlagungszeitraum des aktuell vorgelegten
+                                            Einkommensteuerbescheides
+                                            eine beitragsfreie Zeit wegen Zahlung einer Entgeltersatzleistung, z.B.
+                                            Krankengeld?</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="25%">{{checkbox}} <label>Так, з <span> Ja, vom</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td width="25%">{{checkbox}} <label>по <span> bis</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                    <div class="wrap">
+
+                        <h2 style="margin:0; ">Оплата внесків <span style="">Beitragszahlung</span> </h2>
+                        <h3 style="margin:0; ">оручення на прямий дебет SEPA <span
+                                style="">SEPA-Lastschriftmandat</span> </h3>
+
+                        <table>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2"><label>Я хочу, щоб майбутні платежі списувалися з мого банківського
+                                        рахунку. Для цього я повністю заповнив/ла та додав/ла окреме
+                                        доручення на прямий дебет SEPA.<br> <span>
+                                            Ich möchte künftige Zahlungen von meinem Bankkonto einziehen lassen. Dazu
+                                            habe ich das separate SEPA-Lastschriftmandat vollständig ausgefüllt und
+                                            beigefügt.</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3"><label>Внески сплачуються третіми особами:<br> <span>
+                                            Die Beiträge werden von Dritten gezahlt:</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td><label>Роботодавець<br> <span>
+                                            Arbeitgeber</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td><label>Органи соціального забезпечення<br> <span>
+                                            Sozialhilfeträger</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td><label>Інші<br> <span>
+                                            Sonstige</span></label>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+                        </table>
+
+                    </div>
+
+                </div> <!-- /col1 -->
+
+
+
+                <!-- col2 -->
+                <div style="width: 49%;">
+                    <div class="wrap">
+
+                        <h3 style="margin:0; ">Інформація про страхування за останні 5 років <br><span style="">Angaben
+                                zur
+                                Versicherung der letzten 5 Jahre</span> </h3>
+
+
+                        <table>
+
+                            <tr>
+                                <td colspan="4"><label>Страховий період <span> Versicherungszeit</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="25%"><label>з <span> vom</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td width="25%"><label>по <span> bis</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="2"><label>Медична страхова компанія<br> <span>
+                                            Krankenkasse</span></label>
+                                </td>
+                                <td colspan="2">
+                                    <div class="inp">{{variable}}</div></label>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="4"><label>Страховий період <span> Versicherungszeit</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="25%"><label>з <span> vom</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td width="25%"><label>по <span> bis</span></label>
+                                </td>
+                                <td width="25%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2"><label>Медична страхова компанія<br> <span>
+                                            Krankenkasse</span></label>
+                                </td>
+                                <td colspan="2">
+                                    <div class="inp">{{variable}}</div></label>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="4"><label>Останнє страхування з передоплатою було <br><span>
+                                            Die letzte Versicherung bei der Vorkasse war</span></label>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>як обов’язково застрахована особа <em style="display: inline-block;">
+                                            (працівник, пенсіонер тощо)</em><br>
+                                        <span>
+                                            als Pflichtversicherter (Arbeitnehmer, Rentner o. Ä.)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>як застрахований член родини у
+                                        <span>
+                                            als Familienversicherter bei</span></label><br>
+                                    <div class="inp" style="margin-top: 5px; ">{{variable}}</div>
+                                    <div class="inp" style="margin-top: 5px; ">{{variable}}</div>
+                                    <label style="padding-top: 5px; display: block;"><em>(прізвище, ім’я одного з
+                                            батьків
+                                            дитини/дружини/чоловіка)</em>
+                                        <span>
+                                            (Name, Vorname Elternteil/Ehepartner)</span></label>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>як добровільно застрахована особа
+                                        <span>
+                                            als freiwillig Versicherter</span></label>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>як особа, яка підлягає обов’язковому страхуванню відповідно до №
+                                        13 абз. 1 § 5 книги V Соціального кодексу Німеччини
+                                        <span>
+                                            als Pflichtversicherter nach §5 Abs. 1 Nr. 13 SGB V</span></label>
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+
+                    </div>
+
+
+                    <div class="wrap">
+
+                        <h3 style="margin:0; ">Інше* <span style="">Sonstiges* </span> </h3>
+
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>Так, я хочу включити членів родини до сімейного страхування.<br>
+                                        <span>
+                                            Ja, ich möchte Angehörige in die Familienversicherung
+                                            aufnehmen</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>Так, я хочу взяти участь у бонусній програмі IKK classic.
+                                        <span>
+                                            Ja, ich möchte am Bonusprogramm der IKK classic teilnehmen.</span></label>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td width="10%">{{checkbox}}
+                                </td>
+                                <td><label>Так, я хочу отримати інформацію про ощадні тарифи IKK.
+                                        <span>
+                                            Ja, ich wünsche Informationen zu den IKK Spartarifen.</span></label>
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+
+
+                    </div>
+
+
+
+
+                </div> <!-- /col2 -->
+            </div>
+
+
+
+            <div class="footer"><img src="logo.png" width="554" height="184"></div>
+
+
+            <div class="page_break"></div>
+
+
+
+
+
+            <!-- PAGE 3, columns 
+            ----------------------------------------------------------------------------------------------------------->
+            <div class="header_space"></div>
+            <h2 style="margin:0; ">Перевірка доходів <span style="">Einkommensprüfung</span> </h2>
+
+            <div style='width: 100%; display: flex; justify-content: space-between;'>
+
+                <!-- col1 -->
+                <div style="width: 100%;">
+
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Перевірка доходів для <span style="">Einkommensprüfung für</span> </h3>
+
+                        <div style="display: flex; justify-content: space-between; line-height: 14px;">
+                            <div style='width: 32%;'>
+                                <label>Ім’я <span>
+                                        Vorname</span></label>
+                                <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                            </div>
+                            <div style='width: 32%;'>
+                                <label>Прізвище <span>
+                                        Name</span></label>
+                                <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                            </div>
+                            <div style='width: 32%;'>
+                                <label>Дата народження <span>
+                                        Geburtsdatum</span></label>
+                                <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Мій дохід <span style="">Mein Einkommen</span> </h3>
+
+                        <label>Я маю власний дохід. <span>
+                                Ich habe eigene Einnahmen.</span></label>
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="4"><label>Так <span>
+                                            Ja</span></label></td>
+                            </tr>
+
+                            <tr>
+                                <td>{{checkbox}}</td>
+                                <td colspan="3"><label>Ні Я покриваю свої витрати на проживання шляхом: <span>
+                                            Nein, ich bestreite meinen Lebensunterhalt durch:</span></label>
+                                    <label><em>(наприклад, допомоги в натуральній формі від дружини/чоловіка, батьків,
+                                            родичів, власних заощаджень тощо)</em> <span>
+                                            (z.B. Sachbezüge von Ehepartner, Eltern, Angehörigen, eigene Ersparnisse
+                                            o.Ä.)</span></label>
+                                </td>
+                                <td width="32%">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><label>та/або отримую щомісячну суму матеріальної підтримки в
+                                        євро:<span><br>und/oder
+                                            erhalte einen monatlichen Unterstützungsbetrag in Euro:</span></label>
+                                </td>
+                                <td width="15%" style="padding-right: 30px;">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td style="padding-right: 5px;">
+                                    <label>від<br><span>von</span></label>
+                                </td>
+                                <td width="32%">
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="4"><label>Мій дохід від роботи або зарплата перевищує верхню межу
+                                        обчислення страхових внесків в медичне страхування. Я не отримую пенсію від
+                                        обов’язкового
+                                        пенсійного страхування та/або доходи від пенсійних схем компанії або пенсійних
+                                        виплат. Додаткова інформація про ситуацію з доходами опущена. <span>
+                                            Mein Arbeitseinkommen oder Gehalt übersteigt die Beitragsbemessungsgrenze in
+                                            der Krankenversicherung. Eine Rente der gesetzlichen Rentenversicherung
+                                            und/oder Einkünfte aus
+                                            betrieblicher Altersversorgung bzw. Versorgungsbezüge beziehe ich nicht.
+                                            Weitere Angaben zu den Einkommensverhältnissen entfallen. </span></label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+
+                    <div class="wrap" style="padding:0;">
+
+
+
+                        <table class="big">
+
+                            <tr>
+                                <td>
+                                    <h3 style="margin:0; ">Вид та розмір валового доходу <br><span style="">Art und Höhe
+                                            der Bruttoeinkünfte</span> </h3>
+                                </td>
+                                <td colspan="2">
+                                    <h3 style="margin:0; ">застрахованої особи <br><span style="">des
+                                            Versicherten</span> </h3>
+                                </td>
+                                <td colspan="2">
+                                    <h3 style="margin:0; ">чоловіка/дружини
+                                        <em>(вказати лише, якщо чоловік/
+                                            дружина має обов’язкове
+                                            медичного страхування)</em>
+                                        <span style="">des Ehepartners (nur angeben, wenn
+                                            der Ehepartner nicht gesetzlich
+                                            versichert ist)</span>
+                                    </h3>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr class="blue">
+                                <td width="50%"><label>Будь ласка, вкажіть в євро <br><span>
+                                            Angaben bitte in Euro</span></label></td>
+                                <td width="12.5%"><label>щомісячно <br><span>
+                                            monatlich</span></label></td>
+                                <td width="12.5%"><label>щорічно <br><span>
+                                            jährlich</span></label></td>
+                                <td width="12.5%"><label>щомісячно <br><span>
+                                            monatlich</span></label></td>
+                                <td width="12.5%"><label>щорічно <br><span>
+                                            jährlich</span></label></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td><label>Заробітна плата, винагорода за діяльність, не пов’язану з самозайнятістю
+                                        (також
+                                        мініробота), спеціальні виплати, такі як відпускні та різдвяні премії та інші
+                                        виплати, наприклад, тантьєми, вихідна допомога <strong>Будь ласка, додайте
+                                            докази.</strong>
+                                        <br><span>
+                                            Arbeitsentgelt, Dienstbezüge aus nichtselbstständiger Tätigkeit (auch
+                                            Minijob), Sonderzahlungen wie
+                                            Urlaubs- und Weihnachtsgeld sowie sonstige Zahlungen, z.B. Tantiemen,
+                                            Abfindungen.
+                                            Bitte Nachweis beifügen.</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><label>Дохід від самозайнятості (відповідно до загальних положень про визначення
+                                        прибутку закону про податок на прибуток), доходи від комерційної діяльності,
+                                        діяльності як учасника товариства/керівника <strong>Будь ласка, додайте останнє
+                                            повідомлення про нарахування податку на прибуток.** Якщо ви відкриваєте
+                                            бізнес, будь ласка, додайте реєстрацію вашої компанії та довідку про
+                                            доходи.</strong>
+                                        <br><span>
+                                            Einkünfte aus selbstständiger Tätigkeit (nach den allgemeinen
+                                            Gewinnermittlungsvorschriften des
+                                            Einkommensteuerrechts), Einkünfte aus Gewerbebetrieb, Tätigkeit als
+                                            Gesellschafter/Geschäftsführer.
+                                            Bitte den letzten Einkommensteuerbescheid beifügen.** <br>
+                                            Bei Gewerbeaufnahme bitte Gewerbeanmeldung und Nachweis über Einkünfte
+                                            beifügen</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td><label>Дотації на початку підприємницької діяльності, грант на відкриття бізнесу,
+                                        інші
+                                        субсидії <strong>Будь ласка, додайте копію повідомлення про нарахування податку
+                                            на прибуток.</strong>
+                                        <br><span>
+                                            Einstiegsgeld, Gründungszuschuss, andere Fördergelder. Bitte Kopie des
+                                            Bescheides beifügen.</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td><label>Пенсії від обов’язкового пенсійного страхування, пенсії від іноземної
+                                        установи
+                                        пенсійного страхування, пенсії з нещасних випадків та інвалідам війни, пенсії,
+                                        пенсії для держслужбовців, пенсії компанії, пенсія овдовілим або подібні,
+                                        можливо, зі спеціальною виплатою, згідно з положеннями про державну службу,
+                                        одноразові капітальні виплати, виплачені за останні 10 років <br><strong>Будь
+                                            ласка, додайте копію повідомлення про нарахування податку на
+                                            прибуток</strong>
+                                        <br><span>
+                                            Rente aus der gesetzlichen Rentenversicherung, Renten von einem
+                                            ausländischen
+                                            Rentenversicherungsträger, Unfall- und Kriegsbeschädigtenrente, Ruhegehalt,
+                                            Pension, Betriebsrenten,
+                                            Witwengeld oder Ähnliches, ggf. mit Sonderzahlung, nach beamtenrechtlichen
+                                            Vorschriften, einmalige
+                                            Kapitalleistungen, die in den letzten 10 Jahren gezahlt wurden. Bitte Kopie
+                                            des Bescheides beifügen.</span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><label>Доходи від оренди <strong>Будь ласка, додайте повідомлення про нарахування
+                                            податку на прибуток.**</strong>
+                                        <br><span>
+                                            Einkünfte aus Vermietung und Verpachtung. Bitte Einkommensteuerbescheid
+                                            beifügen.**
+                                        </span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><label>Доходи від капіталовкладень без вирахування суми, яка може бути вирахувана
+                                        із заощаджень до нарахування податку <strong>Будь ласка, додайте
+                                            докази.</strong>
+                                        <br><span>
+                                            Einkünfte aus Kapitalvermögen ohne Abzug des Sparerpauschbetrages. Bitte
+                                            Nachweis beifügen
+                                        </span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><label>Забезпечення та допомога на проживання (наприклад, соціальна допомога,
+                                        соціальні виплати, субсидії на орендну плату, базова пенсія). <strong>Будь
+                                            ласка, додайте копію повідомлення про нарахування податку на
+                                            прибуток.</strong>
+                                        <br><span>
+                                            Sicherung und Hilfe zum Lebensunterhalt (z.B. Sozialhilfe, Sozialgeld,
+                                            Mietzuschüsse,
+                                            Grundsicherungsrente). Bitte Kopie des Bescheides beifügen.
+                                        </span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+                                <td><label>Інші допомога на проживання (наприклад, утримання, без допомоги на дитину
+                                        та на оренду житла, приватне страхування) <br> <strong>Будь ласка, додайте копію
+                                            повідомлення про нарахування податку на прибуток. </strong>
+                                        <br><span>
+                                            Sonstige Einnahmen zum Lebensunterhalt (z.B. Unterhalt, ohne Kindergeld und
+                                            Wohngeld, private
+                                            Versicherungen). Bitte Kopie des Bescheides beifügen.
+                                        </span></label></td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                                <td>
+                                    <div class="inp">{{variable}}</div>
+                                </td>
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td colspan="5">
+                                    <label>** Можна перекреслити інформацію в повідомленні про нарахування податку на
+                                        прибуток, яка не потрібна для розрахунку внесків, наприклад, сума податків. <br>
+                                        <span>
+                                            ** Angaben im Einkommensteuerbescheid, die nicht zur Beitragsberechnung
+                                            erforderlich sind, wie z.B. die Höhe der Steuern, können von Ihnen
+                                            geschwärzt werden.
+                                        </span></label>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+
+                        </table>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="footer"><img src="logo.png" width="554" height="184"></div>
+
+
+            <div class="page_break"></div>
+
+
+
+            <!-- PAGE 4, columns 
+            ----------------------------------------------------------------------------------------------------------->
+            <div class="header_space"></div>
+            <div style='width: 100%; display: flex; justify-content: space-between;'>
+
+                <!-- col1 -->
+                <div style="width: 49%;">
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Інформація про дітей на утриманні (вказати лише, якщо
+                            чоловік/дружина не має обов’язкового медичного
+                            страхування) <br> <span style="">Angaben zu unterhaltsberechtigten Kindern (nur angeben,
+                                wenn Ehepartner nicht
+                                gesetzlich krankenversichert ist)</span> </h3>
+
+                        <table class="top">
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2"><label>У мене є спільні діти на утриманні.
+                                        <em>(Будь ласка, додайте додаткову анкету – інформація про дітей)</em> <span>
+                                            Ich habe gemeinsam unterhaltsberechtigte Kinder. <br>
+                                            (Bitte Zusatzfragebogen – Angaben zu Kindern – beifügen)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2"><label>У мене <strong>немає спільних</strong> дітей на утриманні.
+                                        <em>(Будь ласка, додайте додаткову анкету – інформація про дітей) <br>
+                                            Ich habe nicht gemeinsam unterhaltsberechtigte Kinder. <br>
+                                            (Bitte Zusatzfragebogen – Angaben zu Kindern – beifügen)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="10%">{{checkbox}}</td>
+                                <td colspan="2"><label>У мене немає дітей на утриманні. <br> <span>
+                                            Ich habe keine unterhaltsberechtigten Kinder</span></label>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <!-- col2 -->
+                <div style="width: 49%;">
+                    <div class="wrap">
+                        <h3 style="margin:0; ">Податковий розгляд внесків на медичне страхування
+                            та страхування на випадок потреби в догляді (Закон
+                            про допомогу громадянам) <br> <span style="">Steuerliche Berücksichtigung der Kranken- und
+                                Pflegeversicherungsbeiträge
+                                (Bürgerentlastungsgesetz)</span> </h3>
+
+                        <table class="top">
+
+                            <tr>
+                                <td colspan="2"><label>У мене є спільні діти на утриманні.
+                                        <em>(Будь ласка, додайте додаткову анкету – інформація про дітей)</em> <span>
+                                            Ich habe gemeinsam unterhaltsberechtigte Kinder. <br>
+                                            (Bitte Zusatzfragebogen – Angaben zu Kindern – beifügen)</span></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><label>Внески на медичне страхування та страхування на випадок потреби в
+                                        догляді передаються до податково-фінансового управління в електронному вигляді.
+                                        Для цього ми просимо вас надати ідентифікаційний
+                                        номер платника податків, наданий Федеральним центральним відомством з податків.
+                                        Ідентифікаційний номер платника податків (SteuerID), наданий Федеральним
+                                        центральним відомством з податків (BZSt)
+                                        (обов’язково): <br><span>
+                                            Kranken- und Pflegeversicherungsbeiträge werden elektronisch an das
+                                            Finanzamt
+                                            übermittelt. Hierzu bitten wir um Angabe der Ihnen vom Bundeszentralamt für
+                                            Steuern
+                                            mitgeteilten Steuer-Identifikationsnummer. Die vom Bundeszentralamt für
+                                            Steuern
+                                            (BZSt)
+                                            mitgeteilte SteuerIdentifikationsnummer (Steuer-ID) lautet
+                                            (erforderlich)</span></label>
+                                    <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><label>У разі неможливості надання даної інформації я погоджуюся на
+                                        автоматичний запит до Федерального центрального відомства з податків. <br>
+                                        <span>
+                                            Ist eine Angabe nicht möglich, bin ich mit einer maschinellen Anfrage beim
+                                            Bundeszentralamt für Steuern einverstanden.</span></label>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="wrap">
+
+                <h3 style="margin:0; ">Заяви особи, яка робить заяву <span style="">Erklärungen des Anzeigenden</span>
+                </h3>
+
+
+                <table class="top">
+                    <tr>
+                        <td colspan="5"><label>Я заявляю, що надана інформація є повною та правдивою. IKK classic буде
+                                негайно
+                                повідомлена про
+                                будь-які майбутні зміни. Як тільки я отримаю
+                                більш актуальне повідомлення про нарахування податку на прибуток**, ніж та, що була
+                                надіслана, я
+                                негайно її подам. Я ознайомився/лась з
+                                інформацією про страхування. Цим я підтверджую, що ознайомився/лась з інформацією про
+                                захист даних
+                                на сторінці 3. <span>
+                                    Ich erkläre, dass die Angaben vollständig und wahrheitsgemäß sind. Künftige
+                                    Änderungen werden
+                                    der IKK classic unverzüglich mitgeteilt. Sobald mir ein aktuellerer als der
+                                    übersandte
+                                    Einkommensteuerbescheid** vorliegt,
+                                    reiche ich diesen umgehend nach. Die Information zur Versicherung habe ich zur
+                                    Kenntnis
+                                    genommen. Hiermit bestätige ich, dass ich den Datenschutzhinweis auf dieser Seite
+                                    gelesen
+                                </span></label></td>
+                    </tr>
+
+
+                    <tr>
+                        <td width="5%">{{checkbox}}</td>
+                        <td colspan="4"><label>Я даю згоду на використання моїх даних IKK classic для інформування мене
+                                про поточні пропозиції у сфері охорони здоров’я та страхування по
+                                телефону, факсу, SMS або електронною поштою. Я можу в будь-який час відкликати цю згоду
+                                на майбутнє в IKK classic. <span>
+                                    Ich bin damit einverstanden, dass
+                                    meine Antragsdaten von der IKK classic genutzt werden, um mich telefonisch, per Fax,
+                                    SMS oder E-Mail über aktuelle Angebote im Gesundheits- und Versicherungsbereich zu
+                                    informieren. Dieses Einverständnis kann ich jederzeit für die Zukunft bei der IKK
+                                    classic widerrufen.
+                                </span></label></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td colspan="2" width="30%"><label>Консультант<br> <span>Berater</span></label>
+                            <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                        </td>
+                        <td width="25%" style="padding-left: 30px; padding-right: 30px;"><label>Місто<br>
+                                <span>Ort</span></label>
+                            <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                        </td>
+                        <td width="15%" style="padding-right: 30px;"><label>Дата<br> <span>Datum</span></label>
+                            <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                        </td>
+                        <td width="30%"><label>Підпис клієнта<br> <span>Unterschrift des Kunden </span></label>
+                            <div class="inp" style="margin-top: 5px;">{{variable}}</div>
+                        </td>
+                    </tr>
+
+                </table>
+
+
+
+
+
+
+
+            </div>
+
+
+            <div style='width: 100%; display: flex; justify-content: space-between;'>
+
+                <!-- col1 -->
+                <div style="width: 100%;">
+                    <h3 style="margin:0; ">Примітка: <span style="">Hinweis:</span>
+                    </h3>
+
+                    <label>Будь ласка, надішліть заповнений та підписаний оригінал до IKK classic або передайте його
+                        одному з наших консультантів по роботі з клієнтами у вашому
+                        регіоні. <span>
+                            Bitte senden Sie das ausgefüllte und unterschriebene Original an die IKK classic zurück oder
+                            geben Sie es bei unseren Kundenberatern in Ihrer Nähe ab</span></label>
+
+                    <label style="padding-top: 10px;"><em>
+                            <strong>Інформація про захист даних:</strong><br>
+                            Збір ваших даних використовується для здійснення медичного страхування та страхування на
+                            випадок потреби в догляді та ґрунтується на §§ 9, 175 та 240 у поєднанні з
+                            § 284 книги V Соціального кодексу Німеччини та абз. 3 § 20 та § 57 у поєднанні з § 94 книги
+                            XI Соціального кодексу Німеччини Зобов’язання надати інформацію ґрунтується на
+                            § 206 книги V Соціального кодексу Німеччини та § 50 книги XI Соціального кодексу Німеччини
+                            Надання даних, позначених *, є добровільним. Ви можете заперечити проти подаль
+                            шого використання цих даних компанією IKK classic у будь-який час. Дані не передаватимуться
+                            третім особам. Детальнішу інформацію про це ви можете знайти на сайті
+                            www.ikk-classic.de/datenschutz
+                        </em> <span>
+                            Datenschutzhinweis: <br>
+                            Die Erhebung Ihrer Daten dient der Durchführung Ihrer Kranken- und Pflegeversicherung und
+                            beruht auf §§9, 175 und 240 i. V. m. 284 SGB V und §§20 Abs. 3 und 57 i. V. m. 94 SGB XI.
+                            Die
+                            Verpflichtung zur Auskunft ergibt sich aus den §§206 SGB V und 50 SGB XI. Die Angabe der mit
+                            * gekennzeichneten Daten ist freiwillig, der Nutzung dieser Daten können Sie jederzeit für
+                            die
+                            Zukunft bei der IKK classic widersprechen. Eine Weiterleitung der Daten an Dritte erfolgt
+                            nicht. Weitere Informationen dazu finden Sie unter
+                            www.ikk-classic.de/datenschutz</span></label>
+
+                    <label style="padding-top: 10px;"><em>
+                            <strong>Загальна примітка:</strong>
+                            Позначення, використані у формі, застосовні до всіх статей. З міркувань зручності читання
+                            різні форми були опущені
+                        </em> <span>
+                            Allgemeiner Hinweis: Die im Formular verwendeten Bezeichnungen gelten für alle Geschlechter.
+                            Aus Gründen der Lesbarkeit wurde auf verschiedene Formen verzichtet</span></label>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="footer"><img src="logo.png" width="554" height="184"></div>
+
+
+
+            <div class="page_break"></div>
+
+
+
+
+
+            <!-- PAGE 5, columns 
+            ----------------------------------------------------------------------------------------------------------->
+            <div class="header_space"></div>
+            <div style='width: 100%; display: flex; justify-content: space-between; flex-wrap:wrap;'>
+
+                <div style="width: 100%;">
+
+                    <h2 style="margin:0 0 15px 0; ">Важлива інформація</h2>
+
+
+                </div>
+
+                <!-- col1 -->
+                <div style="width: 49%;">
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Початок страхування</h3>
+                    <p>Ваше медичне страхування та страхування на випадок потреби в догляді
+                        починається одразу після закінчення попереднього медичного страхування.
+                        Ваше повідомлення про членство є односторонньою заявою про наміри,
+                        яке не може бути відкликано після початку членства. Для колишніх військовослужбовців за
+                        контрактом страхування починається з наступного дня
+                        після закінчення служби. Здійснення страхування регулюється положеннями
+                        Соціального кодексу Німеччини. Як тільки вимоги будуть виконані та повідомлення буде завершено,
+                        ви отримаєте підтвердження у повідомленні
+                        про внесок. Ваше страхування також включає обов’язкове страхування на
+                        випадок потреби в догляді за умови, якщо немає звільнення від цього страхування. Попередня
+                        інформація про розмір внесків підлягає перевірці. Якщо
+                        документи про доходи є неповними, внески розраховуватимуться на основі
+                        верхньої межі обчислення страхових внесків.</p>
+                    <br>
+                    <h3 style="margin:0 0 ; color:#149DDE;">Закінчення страхування</h3>
+                    <p>Це медичне страхування закінчується:</p>
+                    <ol style="margin-top: 0;">
+                        <li>коли починається інше обов’язкове страхування</li>
+                        <li>шляхом припинення членства в кінці календарного місяця після наступного починаючи з місяця,
+                            в якому заявлено про припинення членства, за
+                            умови, що відбувається перехід до іншої компанії обов’язкового медичного страхування та
+                            виконано 12-місячний період зобов’язань – від дати
+                            отримання компанією IKK classic повідомлення про припинення членства</li>
+                        <li>з початком сімейного страхування, якщо воно розпочате не більше 6
+                            місяців тому</li>
+                        <li>після закінчення періоду не менше 6 місяців заднім числом від початку цього періоду,
+                            протягом якого не сплачувалися внески за членство,
+                            член та застраховані члени родини не отримували будьяку допомогу, і не
+                            можна було визначити ні місце постійного проживання, ні місце звичайного
+                            фактичного проживання в рамках Соціального кодексу Німеччини. </li>
+                        <li>у разі смерті</li>
+                    </ol>
+                    <p>У випадках, зазначених у пунктах 2–5, обов’язкове страхування на випадок
+                        потреби в догляді також припиняється. Припинення без виконання періоду
+                        зобов’язань можливе, якщо не буде нового членства в обов’язковому медичному страхуванні. </p>
+                    <br>
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Призупинення права на отримання страхових виплат у разі
+                        несплати
+                        внесків</h3>
+                    <p>Ваше право на отримання страхових виплат може бути призупинено, якщо
+                        через 2 тижні після нагадування про заборгованість за внесками у розмірі
+                        частки внесків за 2 місяці та повідомлення про наслідки несплати все ще не
+                        виплачено більше частки внеску за 1 місяць. Страхові виплати можна знову
+                        отримувати лише тоді, коли всі несплачені внески та внески за період призупинення будуть
+                        сплачені, або якщо виникне потреба у допомозі відповідно
+                        до Книги II або XII Соціального кодексу Німеччини. У період призупинення
+                        допомога у зв’язку з хворобою не виплачується. </p>
+                    <br>
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Обчислення страхових внесків</h3>
+                    <p>Ми розраховуємо внески загалом з усіх доходів, які ви використовуєте або
+                        могли б використати для проживання. Ви повинні надати повне підтвердження вашого доходу з
+                        вашими даними. Будь ласка, негайно повідомте
+                        нас про будь-які зміни, які відбудуться після цього. Дохід від самозайнятості
+                        та/або оренди зазвичай визначається попередньо та остаточно розраховується лише після подання
+                        повідомлення про нарахування податку на
+                        прибуток за звітний рік. </p>
+
+
+
+
+
+
+
+
+                </div>
+
+                <!-- col2 -->
+                <div style="width: 49%;">
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Медичне страхування з правом на отримання допомоги у зв’язку
+                        з
+                        хворобою</h3>
+                    <p>Працівники зазвичай застраховані з правом на отримання допомоги у
+                        зв’язку з хворобою з початку 7-го тижня непрацездатності. Самозайняті
+                        особи, що працюють повний робочий день, застраховані без права на
+                        отримання допомоги у зв’язку з хворобою. Проте оформити страхування з
+                        правом на отримання допомоги у зв’язку з хворобою можна з початку 7-го
+                        тижня непрацездатності. Існує трирічний період зобов’язань для отримання
+                        передбаченої законом допомоги у зв’язку з хворобою. Це стосується і в
+                        разі зміни медичної страхової компанії. Розмір допомоги у зв’язку з хворобою
+                        розраховується лише з фактично втраченого доходу від роботи. Це також
+                        стосується виплати внесків з мінімального доходу. Звільнення від сплати
+                        внесків у період непрацездатності поширюється лише на втрачений дохід
+                        від роботи. Ви, як і раніше, зобов’язані сплачувати внески за дохід, отриманий навіть під час
+                        вашої непрацездатності (наприклад, пенсії, доходи від
+                        відсотків, доходи від оренди). У разі негативного доходу ви не маєте права
+                        на отримання допомоги у зв’язку з хворобою. Страхування з правом на отримання допомоги у
+                        зв’язку з хворобою не може бути оформлено в разі
+                        існуючої непрацездатності. </p>
+                    <br>
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Страхування на випадок потреби в догляді </h3>
+                    <p>До добровільного медичного страхування також відноситься страхування
+                        на випадок потреби в догляді в IKK classic. Ви можете бути звільнені від
+                        цього страхування, якщо ви вже оформили страхування в приватній страховій компанії на покриття
+                        витрат, пов’язаних на випадок потреби в догляді.<br>
+                        Будь ласка, зв’яжіться із нами. </p>
+                    <br>
+
+                    <h3 style="margin:0 0 ; color:#149DDE;">Передача даних про внески</h3>
+                    <p>Компанії обов’язкового медичного страхування повинні надсилати до центрального офісу (Центральне
+                        управління з виплати допомоги по старості
+                        - ZfA) суму сплачених та відшкодованих у відповідному році внесків на
+                        медичне страхування та страхування на випадок потреби в догляді, якщо
+                        вони не повинні надсилатися разом з електронною довідкою про податок
+                        на прибуток або повідомленням про отримання пенсії. </p>
+                    <br>
+                    <h3>Ваша IKK classic</h3>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            <div class="footer"><img src="logo.png" width="554" height="184"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
